@@ -2,8 +2,9 @@
 {% block title %} register page {% endblock %}
 {% block content %}
     <h1> Register page </h1>
+    <br><br><br>
     <form method="post">
         {% csrf_token %}
-        {{form.as_p}}
+        <div class="col-md-6">{{form}}</div>
     </form>
 {% endblock %}
